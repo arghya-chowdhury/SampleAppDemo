@@ -7,6 +7,9 @@ pool:
 variables:
   buildConfiguration: 'Release'
 
+build:
+  project: SampleApp.sln
+
 steps:
 - script: |
     dotnet build --configuration $(buildConfiguration)
