@@ -1,4 +1,4 @@
 FROM microsoft/aspnetcore:2.0
 WORKDIR /app
-COPY ./bin/Release/netcoreapp2.0/publish .
+COPY SampleApp/out .
 ENTRYPOINT ["dotnet", "SampleApp.dll"]
